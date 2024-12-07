@@ -7,11 +7,11 @@ current_date = date.today()
 
 formatted_date = current_date.strftime("%Y-%m-%d")  
 
-input_number = 1585
+input_number = 1496
 customs_brokerage_fee_local_currency = 165
 customer_fob_cost_usd = 0
 additional_duty = 0
-customize_input_occean_rate = 4866
+customize_input_occean_rate = 7109
 customize_input_drayage_rate = 700
 exchange_rate_usd_to_local_currency = 1
 
@@ -94,46 +94,43 @@ total_basis = total_volume if calculation_basis == 'volume' else total_weight
 recalculated_costs = []
 catalogues = set()
 
+
+duty_total = 0
+total_price = 0
+total_price_usd = 0
 # Calculate and print proportion for each item
 for _, item in filtered_quantities.iterrows():
     proportion = (item['Volume'] if calculation_basis == 'volume' else item['Weight']) / total_basis
     fob_weight_proportion = item['Weight']/total_weight
+    unit_price = unit_prices_mapping_corrected.get(item['Item'], 0)  # Assume a corrected mapping is used
+    total_price += item['Qty'] * unit_price
+    total_price_usd += item['Qty'] * unit_price
     print(f"Item: {item['Item']}, Proportion: {proportion:.2%}, FOB Weight Proportion: {fob_weight_proportion:.2%}")
     #print(item['Weight'])
     #print(total_weight)
 
 # Collect catalogues and find the biggest duty rate if extra calculations are needed
-if extra_calculation:
-    for _, item in filtered_quantities.iterrows():
-        catalogue = item['Catalogue']
-        duty_rate = duty_rates[warehouse].get(catalogue, 0)
-        catalogues.add(catalogue)
-
-duty_total = 0
-total_price = 0
-total_price_usd = 0
-for _, item in filtered_quantities.iterrows():
-    unit_price = unit_prices_mapping_corrected.get(item['Item'], 0)  # Assume a corrected mapping is used
-# Calculate costs considering proportions
+    if extra_calculation:
+        for _, item in filtered_quantities.iterrows():
+            catalogue = item['Catalogue']
+            duty_rate = duty_rates[warehouse].get(catalogue, 0)
+            catalogues.add(catalogue)
     
-for _, item in filtered_quantities.iterrows():
-    unit_price = unit_prices_mapping_corrected.get(item['Item'], 0)  # Assume a corrected mapping is used
-    total_price += item['Qty'] * unit_price
-    total_price_usd += item['Qty'] * unit_price
-    # print(total_price_usd)
+
+    #print(total_price_usd)
     print(item['Qty'])
     print(item['Qty'] * unit_price)
     print(unit_price)
     # print(item['Qty'])
     # print(filtered_quantities.iterrows())
-for _, item in filtered_quantities.iterrows():
+# for _, item in filtered_quantities.iterrows():
     if warehouse == "Progressive UK":
-        unit_price = unit_prices_mapping_corrected.get(item['Item'], 0)  # Assume a corrected mapping is used
+        # unit_price = unit_prices_mapping_corrected.get(item['Item'], 0)  # Assume a corrected mapping is used
         fob_proportion = unit_price*item['Qty']/total_price
     if warehouse == "Rhenus Netherlands":
         fob_weight_proportion = item['Weight']/total_weight
     # proportion = (item['Volume'] if calculation_basis == 'volume' else item['Weight']) / total_basis
-    unit_price = unit_prices_mapping_corrected.get(item['Item'], 0)
+    # unit_price = unit_prices_mapping_corrected.get(item['Item'], 0)
     # print(fob_weight_proportion)  # Assume a corrected mapping is used
     # print(item['Qty'])
     
@@ -180,6 +177,8 @@ for _, item in filtered_quantities.iterrows():
     #print(final_duty_cost_usd_to_local)
     final_ocean_rate = proportion * customize_input_occean_rate
     final_drayage_rate = proportion * customize_input_drayage_rate
+    print(final_ocean_rate)
+    print(final_drayage_rate)
     # print(final_duty_cost_usd_to_local)
     duty_total += (final_duty_cost_usd_to_local - brokerage_fee_allocation)
     recalculated_costs.append({
@@ -195,6 +194,7 @@ for _, item in filtered_quantities.iterrows():
     })
 
 print(duty_total)
+
 
 
 
@@ -222,9 +222,9 @@ for cost in recalculated_costs:
 restructured_costs_df = pd.DataFrame(restructured_data)
 #     Create a filename using the input number
 file_path = f"{input_number_str} Landed Cost Extract.csv"
-restructured_costs_df.to_csv(file_path, index=False)
+restructured_costs_df.to_csv('../Playwright_expercice/'+file_path, index=False)
 file_path = f"{input_number_str} Landed Cost Extract.xlsx"
-restructured_costs_df.to_excel('../Playwright_expercice'+file_path, sheet_name='Sheet 1', index=False)
+restructured_costs_df.to_excel('../Playwright_expercice/'+file_path, sheet_name='Sheet 1', index=False)
 
 # # Using 'openpyxl' to load the workbook
 # book = load_workbook('test.xlsx')
@@ -246,11 +246,12 @@ input_data = {
     'Additional Duty': [additional_duty],
     'Customize Input Ocean Rate': [customize_input_occean_rate],
     'Customize Input Drayage Rate': [customize_input_drayage_rate],
-    'Exchange Rate (USD to Local Currency)': [exchange_rate_usd_to_local_currency]
+    'Exchange Rate (USD to Local Currency)': [exchange_rate_usd_to_local_currency],
+    'Total Duty without Customs Brokerage Fee': [duty_total]
 }
 input_df = pd.DataFrame(input_data)
 
 file_path = f"{input_number_str} Input Ref.csv"
-input_df.to_csv('../Playwright_expercice'+file_path, index=False)
+input_df.to_csv('../Playwright_expercice/'+file_path, index=False)
 
-print(f"Input fields saved to {'../Playwright_expercice'+file_path}") 
+print(f"Input fields saved to {'../Playwright_expercice/'+file_path}") 

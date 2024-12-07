@@ -60,8 +60,7 @@ def process_multiple_pdfs(pdf_paths):
     return combined_summary
 
 # List of PDF file paths for the uploaded files
-pdf_paths = ['Inbound Receipt ER3438.pdf','Inbound Receipt ER3461.pdf','Inbound Receipt ER3539.pdf','Inbound Receipt ER3554.pdf','Inbound Receipt ER3566.pdf']
-
+pdf_paths = ['Inbound Receipt ER3570.pdf']
 # Process all PDFs and create a combined summary
 combined_summary_table = process_multiple_pdfs(pdf_paths)
 
