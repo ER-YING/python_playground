@@ -7,13 +7,13 @@ current_date = date.today()
 
 formatted_date = current_date.strftime("%Y-%m-%d")  
 
-input_number = 1501
-customs_brokerage_fee_local_currency = 95
-customer_fob_cost_usd = 7203.47
+input_number = 1528
+customs_brokerage_fee_local_currency = 138.51
+customer_fob_cost_usd = 3500
 additional_duty = 0
-customize_input_occean_rate = 6254
-customize_input_drayage_rate = 999.47
-exchange_rate_usd_to_local_currency = 0.9287
+customize_input_occean_rate = 3550
+customize_input_drayage_rate = 1286.1
+exchange_rate_usd_to_local_currency = 0.7721
 
 workbook = pd.ExcelFile('../Playwright_expercice/test.xlsx')
 quantities = workbook.parse('Sheet1')
@@ -99,15 +99,19 @@ duty_total = 0
 total_price = 0
 total_price_usd = 0
 totalCost = 0
+for _, item in filtered_quantities.iterrows():
+    unit_price = unit_prices_mapping_corrected.get(item['Item'], 0)  # Assume a corrected mapping is used
+    total_price += item['Qty'] * unit_price
+    total_price_usd += item['Qty'] * unit_price
+
 # Calculate and print proportion for each item
 for _, item in filtered_quantities.iterrows():    
     proportion = (item['Volume'] if calculation_basis == 'volume' else item['Weight']) / total_basis
     fob_weight_proportion = item['Weight']/total_weight
     unit_price = unit_prices_mapping_corrected.get(item['Item'], 0)  # Assume a corrected mapping is used
-    total_price += item['Qty'] * unit_price
-    total_price_usd += item['Qty'] * unit_price
-    print('unit total usd - ' + str(item['Qty'] * unit_price))
     print(f"Item: {item['Item']}, Proportion: {proportion:.2%}, FOB Weight Proportion: {fob_weight_proportion:.2%}")
+    print('unit price -'+ str(unit_price))
+    print('unit total usd - ' + str(item['Qty'] * unit_price))
     # print(item['Weight'])
     # print(total_weight)
 
@@ -121,6 +125,7 @@ for _, item in filtered_quantities.iterrows():
     totalCost +=  item['Qty'] * unit_price
     #print(filtered_quantities.iterrows())
 # for _, item in filtered_quantities.iterrows():
+    
     if warehouse == "Progressive UK":
         # unit_price = unit_prices_mapping_corrected.get(item['Item'], 0)  # Assume a corrected mapping is used
         fob_proportion = unit_price*item['Qty']/total_price
@@ -170,13 +175,10 @@ for _, item in filtered_quantities.iterrows():
         final_duty_cost_usd_to_local = final_duty_cost_usd_convert_to_local + brokerage_fee_allocation + additional_duty_allocation
     else:
         final_duty_cost_usd_to_local = final_duty_cost_usd + brokerage_fee_allocation +additional_duty_allocation
-    #print(fob_cost_allocation)
-    #print(final_duty_cost_usd_to_local)
     final_ocean_rate = proportion * customize_input_occean_rate
     final_drayage_rate = proportion * customize_input_drayage_rate
     print('final ocean rate - ' + str(final_ocean_rate))
     print('final drayage rate - ' + str(final_drayage_rate))
-    #print(final_duty_cost_usd_to_local)
     duty_total += (final_duty_cost_usd_to_local - brokerage_fee_allocation)
     recalculated_costs.append({
         'PO#': item['PO#'],
@@ -193,7 +195,6 @@ print('totalCost - ' + str(totalCost))
 print('total price usd - ' + str(total_price_usd))
 print('duty total - ' + str(duty_total))
 # Prepare the DataFrame from your data
-        
 restructured_data = []
 input_number_str = str(input_number)
 currency = "US Dollar"
