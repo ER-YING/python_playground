@@ -1,0 +1,18 @@
+# Virtual environment & IDE
+.venv
+.vscide
+
+# Data & credential files
+*.xlsx
+*.json
+*.png
+*.pickle
+*.pyc
+__pycache__/
+
+# Temp Office lock files
+~$*
+
+# macOS system files
+.DS_Store
+**/.DS_Store
