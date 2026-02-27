@@ -1,0 +1,67 @@
+﻿Subsidiary,Location,Location InternalID,Date,Exp Receipt Date,External ID,Production Month,Memo,Requested Ship Date,Status,Payee,Vendor InternalID,ITEM,Item InternalID,BOX QTY,UNIT COST_Orig,Total Amount $
+Earth Rated,Northland Goreway,2,2026-02-05,2026-06-15,202602051,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0003,1825,1260,4.26,5367.6
+Earth Rated,Northland Goreway,2,2026-02-05,2026-06-15,202602051,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0033,2321,4800,0.95,4560
+Earth Rated,Northland Goreway,2,2026-02-05,2026-06-15,202602051,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0004,1826,3920,4.12,16150.4
+Earth Rated,Northland Goreway,2,2026-02-05,2026-06-15,202602052,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0004,1826,840,4.12,3460.8
+Earth Rated,Northland Goreway,2,2026-02-05,2026-06-15,202602052,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0002,1821,21600,0.94,20304
+Earth Rated,Northland Goreway,2,2026-02-05,2026-06-15,202602052,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0027,2270,1800,0.95,1710
+Earth Rated,Northland Goreway,2,2026-02-05,2026-06-15,202602052,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0016,2187,1440,0.455,655.2
+Earth Rated,Progressive UK,9,2026-02-05,2026-06-26,202602053,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0028,2271,772,4.18,3226.96
+Earth Rated,Progressive UK,9,2026-02-05,2026-06-26,202602053,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0027,2270,4752,0.95,4514.4
+Earth Rated,Progressive UK,9,2026-02-05,2026-06-26,202602053,April,,2026-03-27,open,American Hygienics Corporation,422,10EU11WP0001,1823,7800,0.97,7566
+Earth Rated,Progressive UK,9,2026-02-05,2026-06-26,202602053,April,,2026-03-27,open,American Hygienics Corporation,422,10EU11WP0002,1824,5400,0.94,5076
+Earth Rated,Rhenus Netherlands,10,2026-02-05,2026-06-26,202602054,April,,2026-03-27,open,American Hygienics Corporation,422,10EU11WP0003,1836,6600,4.26,28116
+Earth Rated,Rhenus Netherlands,10,2026-02-05,2026-06-26,202602055,April,,2026-03-27,open,American Hygienics Corporation,422,10EU11WP0003,1836,360,4.26,1533.6
+Earth Rated,Rhenus Netherlands,10,2026-02-05,2026-06-26,202602055,April,,2026-03-27,open,American Hygienics Corporation,422,10EU11WP0001,1823,19872,0.97,19275.84
+Earth Rated,Rhenus Netherlands,10,2026-02-05,2026-06-26,202602055,April,,2026-03-27,open,American Hygienics Corporation,422,10EU11WP0002,1824,6048,0.94,5685.12
+Earth Rated,Rhenus Netherlands,10,2026-02-05,2026-06-26,202602056,April,,2026-03-27,open,American Hygienics Corporation,422,10EU11WP0002,1824,8208,0.94,7715.52
+Earth Rated,Source Montebello,107,2026-02-05,2026-05-26,202602057,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0001,1819,24600,0.97,23862
+Earth Rated,Source Montebello,107,2026-02-05,2026-05-26,202602058,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0001,1819,15600,0.97,15132
+Earth Rated,Source Montebello,107,2026-02-05,2026-05-26,202602058,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0004,1826,1960,4.12,8075.2
+Earth Rated,Source Montebello,107,2026-02-05,2026-05-26,202602058,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0028,2271,280,4.18,1170.4
+Earth Rated,Source Montebello,107,2026-02-05,2026-05-26,202602059,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0028,2271,980,4.18,4096.4
+Earth Rated,Source Montebello,107,2026-02-05,2026-05-26,202602059,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0034,2322,1920,1.11,2131.2
+Earth Rated,Source Montebello,107,2026-02-05,2026-05-26,202602059,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0002,1821,18600,0.94,17484
+Earth Rated,Source Montebello,107,2026-02-05,2026-05-26,2026020510,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0002,1821,18000,0.94,16920
+Earth Rated,Source Montebello,107,2026-02-05,2026-05-26,2026020510,April,,2026-03-27,open,American Hygienics Corporation,422,10EN11WP0039,2476,1152,1.12,1290.24
+Earth Rated,Source Montebello,107,2026-02-05,2026-05-26,2026020510,April,,2026-03-27,open,American Hygienics Corporation,422,10EN11WP0040,2477,1536,1.08,1658.88
+Earth Rated,Source Montebello,107,2026-02-05,2026-05-26,2026020510,April,,2026-03-27,open,American Hygienics Corporation,422,10EN11WP0043,2489,1296,1.12,1451.52
+Earth Rated,Source Montebello,107,2026-02-05,2026-05-26,2026020510,April,,2026-03-27,open,American Hygienics Corporation,422,10EN11WP0044,2490,2160,1.09,2354.4
+Earth Rated,Source Montebello,107,2026-02-05,2026-05-26,2026020510,April,,2026-03-27,open,American Hygienics Corporation,422,10EN11WP0045,2491,432,1.11,479.52
+Earth Rated,Source Montebello,107,2026-02-05,2026-05-26,2026020511,April,,2026-03-27,open,American Hygienics Corporation,422,10EN11WP0045,2491,1296,1.11,1438.56
+Earth Rated,Source Montebello,107,2026-02-05,2026-05-26,2026020511,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0027,2270,2400,0.95,2280
+Earth Rated,Source Montebello,107,2026-02-05,2026-05-26,2026020511,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0016,2187,2880,0.455,1310.4
+Earth Rated,Source Montebello,107,2026-02-05,2026-05-26,2026020511,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0008,2092,1728,0.405,699.84
+Earth Rated,Source NJ,109,2026-02-05,2026-06-15,2026020512,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0001,1819,18000,0.97,17460
+Earth Rated,Source NJ,109,2026-02-05,2026-06-15,2026020512,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0004,1826,1820,4.12,7498.4
+Earth Rated,Source NJ,109,2026-02-05,2026-06-15,2026020513,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0004,1826,6020,4.12,24802.4
+Earth Rated,Source NJ,109,2026-02-05,2026-06-15,2026020514,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0004,1826,1120,4.12,4614.4
+Earth Rated,Source NJ,109,2026-02-05,2026-06-15,2026020514,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0028,2271,4900,4.18,20482
+Earth Rated,Source NJ,109,2026-02-05,2026-06-15,2026020515,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0028,2271,6020,4.18,25163.6
+Earth Rated,Source NJ,109,2026-02-05,2026-06-15,2026020516,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0028,2271,6020,4.18,25163.6
+Earth Rated,Source NJ,109,2026-02-05,2026-06-15,2026020517,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0028,2271,6020,4.18,25163.6
+Earth Rated,Source NJ,109,2026-02-05,2026-06-15,2026020518,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0028,2271,2100,4.18,8778
+Earth Rated,Source NJ,109,2026-02-05,2026-06-15,2026020518,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0034,2322,10080,1.11,11188.8
+Earth Rated,Source NJ,109,2026-02-05,2026-06-15,2026020518,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0002,1821,4200,0.94,3948
+Earth Rated,Source NJ,109,2026-02-05,2026-06-15,2026020519,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0002,1821,25200,0.94,23688
+Earth Rated,Source NJ,109,2026-02-05,2026-06-15,2026020520,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0002,1821,25200,0.94,23688
+Earth Rated,Source NJ,109,2026-02-05,2026-06-15,2026020521,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0002,1821,25200,0.94,23688
+Earth Rated,Source NJ,109,2026-02-05,2026-06-15,2026020522,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0002,1821,25200,0.94,23688
+Earth Rated,Source NJ,109,2026-02-05,2026-06-15,2026020523,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0002,1821,2400,0.94,2256
+Earth Rated,Source NJ,109,2026-02-05,2026-06-15,2026020523,April,,2026-03-27,open,American Hygienics Corporation,422,10EN11WP0043,2489,1728,1.12,1935.36
+Earth Rated,Source NJ,109,2026-02-05,2026-06-15,2026020523,April,,2026-03-27,open,American Hygienics Corporation,422,10EN11WP0044,2490,2160,1.09,2354.4
+Earth Rated,Source NJ,109,2026-02-05,2026-06-15,2026020523,April,,2026-03-27,open,American Hygienics Corporation,422,10EN11WP0045,2491,1728,1.11,1918.08
+Earth Rated,Source NJ,109,2026-02-05,2026-06-15,2026020523,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0027,2270,17400,0.95,16530
+Earth Rated,Source NJ,109,2026-02-05,2026-06-15,2026020524,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0027,2270,600,0.95,570
+Earth Rated,Source NJ,109,2026-02-05,2026-06-15,2026020524,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0016,2187,7200,0.455,3276
+Earth Rated,Source NJ,109,2026-02-05,2026-06-15,2026020524,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0008,2092,8640,0.405,3499.2
+Earth Rated,Golden State FC LLC (AGL),119,2026-02-05,2026-05-15,2026020525,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0003,1825,5080,4.26,21640.8
+Earth Rated,Golden State FC LLC (AGL),119,2026-02-05,2026-05-15,2026020526,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0004,1826,192,4.12,791.04
+Earth Rated,Golden State FC LLC (AGL),119,2026-02-05,2026-05-15,2026020526,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0003,1825,1464,4.26,6236.64
+Earth Rated,Golden State FC LLC (AGL),119,2026-02-05,2026-05-15,2026020526,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0001,1819,14400,0.97,13968
+Earth Rated,Golden State FC LLC (AGL),119,2026-02-05,2026-05-15,2026020527,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0004,1826,5080,4.12,20929.6
+Earth Rated,Golden State FC LLC (AGL),119,2026-02-05,2026-05-15,2026020528,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0004,1826,5080,4.12,20929.6
+Earth Rated,Golden State FC LLC (AGL),119,2026-02-05,2026-05-15,2026020529,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0004,1826,1768,4.12,7284.16
+Earth Rated,Golden State FC LLC (AGL),119,2026-02-05,2026-05-15,2026020529,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0002,1821,13920,0.94,13084.8
+Earth Rated,Golden State FC LLC (AGL),119,2026-02-05,2026-05-15,2026020530,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0027,2270,6000,0.95,5700
+Earth Rated,Golden State FC LLC (AGL),119,2026-02-05,2026-05-15,2026020530,April,,2026-03-27,open,American Hygienics Corporation,422,10CA11WP0002,1821,14244,0.94,13389.36
